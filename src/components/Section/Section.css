@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
+    font-family: 'Quicksand', sans-serif;
     background-color: blueviolet;
     display: flex;
     align-items: center;
@@ -12,34 +14,36 @@ body{
    ul{
     list-style: none;
    }
-   .delete-button{
+     .button-delete{
+    width: 50px;
     font-size: 10px;
     border: none;
     color: white;
     border-radius: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin-left: 250px;
+    background-color: brown;
    }
   .inputText{
     padding: 4px;
     border: none;
     outline: none;
-    height: 30px;
+    height: 40px;
     width: 300px;
   }
   .add{
+    border: none;
     height: 40px;
     width: 70px;
   }
   .right-text{
     padding-left: 20px;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
     width: 50px;
   }
-  .button-delete{
-width: 50px;
-  }
+
   .info{
     display: flex;
     align-items: center;
