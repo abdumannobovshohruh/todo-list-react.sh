@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import './Section.css'
 export default function Seciton() {
-    // State hook - `useState`
     const [newItem, setNewItem] = useState("");
     const [items, setItems] = useState([]);
-    //Helper Functions 
     function addItem() {
-        // console.log(newItem);
         if (!newItem) {
             alert("Enter an item.");
             return;
@@ -26,15 +23,12 @@ export default function Seciton() {
         <div>
             <body>
                 <div className="App">
-                    {/* 1.Header */}
-                    {/* 2. Input and button */}
                     <input className='inputText' type="text"
                         placeholder='Enter a todo'
                         value={newItem}
                         onChange={e => setNewItem(e.target.value)}
                     />
                     <button onClick={() => addItem()} className="add">Add</button>
-                    {/* 3.List of items (unordered list  with list items) */}
                     <ul>
                         {items.map(item => {
                             return (
